@@ -86,13 +86,7 @@ function fail() { process.exit(1) }
 function success() { process.exit(0) }
 
 function main () {
-  db.createTable()
-  .then(() => db.readJSON('zips.json'))
-  .then(() => success())
-  .catch(err => {
-    console.error(err)
-    fail()
-  })
+  // make shit happen
 }
 
 console.log(parser.parseArgs())
