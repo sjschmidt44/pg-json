@@ -1,0 +1,25 @@
+{
+  "name": "pg-json",
+  "version": "1.0.0",
+  "description": "command line script to load JSON data into a postgres database",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "pg-json": "pg-json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjschmidt44/pg-json.git"
+  },
+  "author": "Scott Schmidt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sjschmidt44/pg-json/issues"
+  },
+  "homepage": "https://github.com/sjschmidt44/pg-json#readme",
+  "dependencies": {
+    "argparse": "^1.0.9",
+    "bluebird": "^3.4.6",
+    "pg": "^6.1.0"
+  }
+}
