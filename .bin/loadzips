@@ -8,15 +8,11 @@ const args = parser.parseArgs()
 function fail() { process.exit(1) }
 function success() { process.exit(0) }
 
-jdata(args.file)
+jdata.allData(args.file)
 .then(db.createTable)
-
-// function main () {
-//   readJson.readFileAsync(args.file) // read in the file and return the data from that file
-//   .then(db.createTable)
-//
-// }
-
-
-// TODO: Final - uncomment when main is ready to run
-// main()
+.then(records => records.map(db.loadRecord))
+.then(() => success())
+.catch(err => {
+  console.error(err)
+  fail()
+})
