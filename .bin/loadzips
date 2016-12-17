@@ -11,6 +11,8 @@ function success() { process.exit(0) }
 jdata.allData(args.file)
 .then(db.createTable)
 .then(records => records.map(db.loadRecord))
+.then(proms => Promise.all(proms))
+.then(() => console.log('files loaded successfully'))
 .then(() => success())
 .catch(err => {
   console.error(err)
