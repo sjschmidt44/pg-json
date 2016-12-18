@@ -1,6 +1,6 @@
 {
   "name": "pg-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "command line script to load JSON data into a postgres database",
   "main": "index.js",
   "scripts": {
