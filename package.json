@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/sjschmidt44/pg-json/issues"
   },
+  "directories": {
+    "bin": "./bin"
+  },
   "homepage": "https://github.com/sjschmidt44/pg-json#readme",
   "dependencies": {
     "argparse": "^1.0.9",
