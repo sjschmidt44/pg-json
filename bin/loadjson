@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+const db = require('../lib/loadDB')
+const parser = require('../lib/arg-parser')
+const jdata = require('../lib/read-json')
+const args = parser.parseArgs()
+
+function fail() { process.exit(1) }
+function success() { process.exit(0) }
+
+jdata.allData(args.file)
+.then(db.createTable)
+.then(records => records.map(db.loadRecord))
+.then(proms => Promise.all(proms))
+.then(() => success())
+.catch(err => {
+  console.error(err)
+  fail()
+})
