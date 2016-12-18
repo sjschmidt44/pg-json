@@ -2,7 +2,7 @@
   "name": "pg-json",
   "version": "1.0.4",
   "description": "command line script to load JSON data into a postgres database",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/sjschmidt44/pg-json/issues"
   },
-  "directories": {
+  "bin": {
     "loadjson": "bin/loadjson"
   },
   "homepage": "https://github.com/sjschmidt44/pg-json#readme",
