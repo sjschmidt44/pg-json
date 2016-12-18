@@ -1,11 +1,11 @@
 {
   "name": "pg-json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "command line script to load JSON data into a postgres database",
   "main": "server.js",
   "scripts": {
     "test": "mocha",
-    "pg-json": "pg-json"
+    "pg-json": "loadjson"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,11 @@
   "bugs": {
     "url": "https://github.com/sjschmidt44/pg-json/issues"
   },
+  "bin": {
+    "sequelize": "bin/sequelize"
+  },
   "directories": {
-    "bin": "./bin"
+    "pg-json": "bin/loadjson"
   },
   "homepage": "https://github.com/sjschmidt44/pg-json#readme",
   "dependencies": {
