@@ -21,7 +21,12 @@
   "bin": {
     "loadjson": "bin/loadjson"
   },
-  "keywords": ["postgres", "json", "import", "migration"],
+  "keywords": [
+    "postgres",
+    "json",
+    "import",
+    "migration"
+  ],
   "homepage": "https://github.com/sjschmidt44/pg-json#readme",
   "dependencies": {
     "argparse": "^1.0.9",
